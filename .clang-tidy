@@ -1,0 +1,5 @@
+Checks:          '*, -some-check-to-disable, -cppcoreguidelines-avoid-magic-numbers'
+HeaderFilterRegex: '.*'
+ExtraArgs:
+  - -I./include
+

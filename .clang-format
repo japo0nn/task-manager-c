@@ -1,0 +1,7 @@
+# .clang-format
+
+BasedOnStyle: Google  # Можно заменить на Google, Microsoft, Custom и др.
+IndentWidth: 4      # 4 пробела для одного уровня отступа
+UseTab: ForIndentation # Использовать табуляции только для отступов
+TabWidth: 4         # Ширина табуляции равна 4 пробелам
+
