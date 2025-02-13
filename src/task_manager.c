@@ -1,11 +1,4 @@
-#include <stdio.h>
-#include <task_manager.h>
-
-#ifdef __unix__
-#include <dirent.h>
-#elif defined(_WIN32)
-#include <windows.h>
-#endif
+#include "task_manager.h"
 
 #ifdef __unix__
 void list_proccesses() {
@@ -14,8 +7,9 @@ void list_proccesses() {
 	dp = opendir("/proc");
 	if (dp != NULL) {
 		while (ep = readdir(dp)) {
-			puts(ep->d_name);
-			printf("%c", *ep->d_name);
+			if (is_digit_string(ep->d_name)) {
+				printf("PID = %s\n", ep->d_name);
+			}
 		}
 		(void)closedir(dp);
 	}
