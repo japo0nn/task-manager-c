@@ -10,5 +10,5 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include_directories(include)
 
 # Указываем исходные файлы
-add_executable(TaskManager src/main.c src/task_manager.c src/deftype.c)
+add_executable(tskmng src/main.c src/task_manager.c src/deftype.c)
 
