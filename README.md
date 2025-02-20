@@ -13,7 +13,7 @@
 ## Installition
 ```
 # Clone repo
-git clone https://github.com/your-repo/tskmng.git
+git clone https://github.com/japo0nn/tskmng-c.git
 cd tskmng
 
 # Build with CMake
