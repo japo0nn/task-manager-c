@@ -10,12 +10,9 @@ void handle_sigint(int sig);
 int main(void) {
 	signal(SIGINT, handle_sigint);
 	printf("\033[2J");
-	int i = 0;
-	while (i < 10) {
+	while (true) {
 		clear_console();
-		printf("i = %d\n", i);
-		sleep(3);
-		i++;
+		sleep(1);
 	}
 	return 0;
 }

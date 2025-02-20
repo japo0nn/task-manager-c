@@ -2,6 +2,7 @@
 #define __HEADERS_H__
 
 #include "deftype.h"
+#include "proccesslib.h"
 #include "stdio.h"
 #include "string.h"
 
